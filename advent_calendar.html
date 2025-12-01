@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Advent Calendar 💕</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #3d5a5a 0%, #2d4545 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .door {
+            aspect-ratio: 1;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: #666666;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .door::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(61, 90, 90, 0.1) 0%, rgba(45, 69, 69, 0.1) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .door:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+
+        .door:hover::before {
+            opacity: 1;
+        }
+
+        .door-number {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 5px;
+            position: relative;
+            z-index: 1;
+            color: #b8941e;
+        }
+
+        .door-date {
+            font-size: 0.9em;
+            opacity: 0.7;
+            position: relative;
+            z-index: 1;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .calendar-grid {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                gap: 15px;
+            }
+            
+            .door-number {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our December Memories 💕</h1>
+        <p class="subtitle">24 days of us</p>
+    </header>
+
+    <div class="calendar-grid">
+        <a href="day1.html" class="door">
+            <div class="door-number">1</div>
+            <div class="door-date">Dec 1</div>
+        </a>
+        <a href="day2.html" class="door">
+            <div class="door-number">2</div>
+            <div class="door-date">Dec 2</div>
+        </a>
+        <a href="day3.html" class="door">
+            <div class="door-number">3</div>
+            <div class="door-date">Dec 3</div>
+        </a>
+        <a href="day4.html" class="door">
+            <div class="door-number">4</div>
+            <div class="door-date">Dec 4</div>
+        </a>
+        <a href="day5.html" class="door">
+            <div class="door-number">5</div>
+            <div class="door-date">Dec 5</div>
+        </a>
+        <a href="day6.html" class="door">
+            <div class="door-number">6</div>
+            <div class="door-date">Dec 6</div>
+        </a>
+        <a href="day7.html" class="door">
+            <div class="door-number">7</div>
+            <div class="door-date">Dec 7</div>
+        </a>
+        <a href="day8.html" class="door">
+            <div class="door-number">8</div>
+            <div class="door-date">Dec 8</div>
+        </a>
+        <a href="day9.html" class="door">
+            <div class="door-number">9</div>
+            <div class="door-date">Dec 9</div>
+        </a>
+        <a href="day10.html" class="door">
+            <div class="door-number">10</div>
+            <div class="door-date">Dec 10</div>
+        </a>
+        <a href="day11.html" class="door">
+            <div class="door-number">11</div>
+            <div class="door-date">Dec 11</div>
+        </a>
+        <a href="day12.html" class="door">
+            <div class="door-number">12</div>
+            <div class="door-date">Dec 12</div>
+        </a>
+        <a href="day13.html" class="door">
+            <div class="door-number">13</div>
+            <div class="door-date">Dec 13</div>
+        </a>
+        <a href="day14.html" class="door">
+            <div class="door-number">14</div>
+            <div class="door-date">Dec 14</div>
+        </a>
+        <a href="day15.html" class="door">
+            <div class="door-number">15</div>
+            <div class="door-date">Dec 15</div>
+        </a>
+        <a href="day16.html" class="door">
+            <div class="door-number">16</div>
+            <div class="door-date">Dec 16</div>
+        </a>
+        <a href="day17.html" class="door">
+            <div class="door-number">17</div>
+            <div class="door-date">Dec 17</div>
+        </a>
+        <a href="day18.html" class="door">
+            <div class="door-number">18</div>
+            <div class="door-date">Dec 18</div>
+        </a>
+        <a href="day19.html" class="door">
+            <div class="door-number">19</div>
+            <div class="door-date">Dec 19</div>
+        </a>
+        <a href="day20.html" class="door">
+            <div class="door-number">20</div>
+            <div class="door-date">Dec 20</div>
+        </a>
+        <a href="day21.html" class="door">
+            <div class="door-number">21</div>
+            <div class="door-date">Dec 21</div>
+        </a>
+        <a href="day22.html" class="door">
+            <div class="door-number">22</div>
+            <div class="door-date">Dec 22</div>
+        </a>
+        <a href="day23.html" class="door">
+            <div class="door-number">23</div>
+            <div class="door-date">Dec 23</div>
+        </a>
+        <a href="day24.html" class="door">
+            <div class="door-number">24</div>
+            <div class="door-date">Dec 24</div>
+        </a>
+    </div>
+</body>
+</html>
