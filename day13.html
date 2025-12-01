@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>December 13th - Introducing you to Kimmy and Kevin</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #3d5a5a 0%, #2d4545 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 60px;
+            animation: fadeIn 0.6s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .day-number {
+            text-align: center;
+            color: #666666;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+
+        .title {
+            text-align: center;
+            color: #b8941e;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            color: #666666;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .section-content {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+            color: #666666;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #3d5a5a;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 30px;
+            }
+            
+            .title {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="day-number">December 13th</div>
+        
+        <h1 class="title">Introducing you to Kimmy and Kevin</h1>
+        
+        <div class="section">
+            <div class="section-title">How I Felt</div>
+            <div class="section-content">
+                “Meet my fun “aunt and uncle” who are super freaking cool”
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Oh Dear</div>
+            <div class="section-content">
+                I’ve always loved showing you off to the people in my life. You are brilliant, a bombshell, and can interact well with so many different types of people. I truly appreciate how you’ve taken the time to plug in with the people I love and care and make sure we continue showing up for them (and reminding me to text them back when I’ve forgotten)
+            </div>
+        </div>
+        
+        <a href="index.html" class="back-link">← Back to Calendar</a>
+    </div>
+</body>
+</html>
